@@ -21,7 +21,7 @@ return new class extends Migration
         ->constrained('subcategorias')
         ->nullOnDelete();
     $table->date('fecha');
-    $table->string('descripcion', 150);
+    $table->string('fuente', 150);
     $table->decimal('monto', 12, 2);
     $table->text('notas')->nullable();
     $table->timestamps();
